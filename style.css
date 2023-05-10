@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(81,83,84);
+    background: linear-gradient(90deg, rgba(81,83,84,1) 0%, rgba(15,51,66,1) 100%);
+}
+#main-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.write-container{
+    margin-top: 100px;
+}
+.write-container h1{
+    font-size: 6rem;
+    font-family: 'Nunito', sans-serif;
+    word-spacing: 20px;
+    padding: 0px 0px 0 50px;
+    color: #ffdfdb;
+    margin-left:100px;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60%;
+    animation: 
+                typing 2s steps(11),
+                cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+#input-container{
+    background-color: #181a1a;
+    border-radius: 1.5rem;
+}
+#input-container{
+    display: flex;
+    margin-top: 20px;
+}
+#input-container input{
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #181a1a;
+    color: white;
+    width: 40vw;
+}
+#input-container input:focus-visible{
+    outline: none;
+}
+#input-container button{
+    border: none;
+    border-radius: 0 1.5rem 1.5rem 0;
+    font-size: 1rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #f7e2df;
+}
+#input-container button:hover{
+    background-color: white;
+    transition-duration: 0.5s;
+    box-shadow: rgba(255, 255, 255, 1) 0px 0px 15px;
+
+}
+.write-container p{
+    color: #ffdfdb;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#add-text-main-container{
+    display: flex;
+    margin-left: 600px;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.add-text-box-container{
+    background-color: #181a1a;
+    width: 25vw;
+    display: flex;
+    border-radius: 1.5rem;
+    padding: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+}
